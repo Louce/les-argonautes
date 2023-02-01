@@ -1,0 +1,29 @@
+{
+  "name": "les-argonautes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "sass-loader": "^13.2.0"
+  },
+  "scripts": {
+    "watch": "sass --watch ./public/sass:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Louce/les-argonautes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Louce/les-argonautes/issues"
+  },
+  "homepage": "https://github.com/Louce/les-argonautes#readme"
+}
