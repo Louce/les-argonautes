@@ -1,0 +1,17 @@
+@function color($name: false) {
+  @if map-has-key($colors, $name) {
+    @return map-get($colors, $name);
+  }
+  @error 'Invalid color name'+ #{"" + $name};
+}
+
+@mixin generate-colors {
+  @each $name, $color in $colors {
+    .bg-#{"" + $name} {
+      background-color: color($name);
+    }
+    .color-#{"" + $name} {
+      color: color($name);
+    }
+  }
+}

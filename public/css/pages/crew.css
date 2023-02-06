@@ -1,0 +1,51 @@
+h2 {
+  margin-bottom: 2em;
+}
+
+.member-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 10px;
+  text-align: center;
+}
+
+.member-item {
+  padding: 0.25em 0;
+}
+
+.new-member-form {
+  margin: 2em 0 4em 0;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 7.5em;
+  line-height: 1.5;
+  background-image: url("../../img/ponton.jpg");
+  background-position-y: 45%;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 3.5em;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin: 0 20px;
+  }
+}
+
+/*# sourceMappingURL=crew.css.map */

@@ -1,0 +1,43 @@
+body.home {
+  height: 100vh;
+  background: url("../../img/ponton.jpg") center no-repeat;
+  background-size: cover;
+}
+body.home h1 {
+  display: none;
+}
+body.home .enter {
+  display: block;
+  width: 4em;
+  padding: 0.7em 1em 0.5em;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 4em;
+  color: #fff;
+  background-color: #D2B7A2;
+  border: 0.2em solid #3D2D33;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 15px #000000;
+  text-align: center;
+  cursor: pointer;
+  margin: 40vh auto 0;
+  transform: translateY(-50%);
+}
+body.home .enter:hover {
+  color: #80604A;
+}
+@media screen and (max-width: 768px) {
+  body.home .enter {
+    margin: 40vh 50px 0;
+    font-size: 3em;
+    width: unset;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=home.css.map */

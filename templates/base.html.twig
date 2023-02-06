@@ -6,22 +6,29 @@
           content="width=device-width, user-scalable=yes, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{% block style %}{% endblock %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" href="{{ asset('img/logo-wild.png') }}">
     <title>{% block title %}Les Argonautes{% endblock %}</title>
 </head>
-<body>
+<body class="{% block body_attr %}{% endblock %}">
 <header>
-    <h1>
-        <a href="{{ path('main_home') }}"><img src="{{ asset('img/logo-wild.png') }}" alt="Wild Code School logo" /></a>
-        Les Argonautes
-    </h1>
-    {% include('inc/nav.html.twig') %}
+    {% include('components/nav.html.twig') %}
 </header>
+
 <main>
-    {% block body %} {% endblock %}
+    <h1>Les Argonautes</h1>
+    {% block main %} {% endblock %}
 </main>
+
+
 <footer>
+    {% block footer %}
     <p>Réalisé par Jason <i>(et Lucille)</i> en Anthestérion de l'an 515 avant JC</p>
+    {% endblock %}
 </footer>
+
 </body>
 </html>

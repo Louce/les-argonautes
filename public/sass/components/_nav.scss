@@ -1,0 +1,45 @@
+@import "../shared/index-shared";
+
+.menu_desk {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  nav {
+    @include mobile {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      list-style-type: none;
+
+      li {
+        &:first-of-type {
+          margin-right: 20px;
+        }
+      }
+
+      a {
+        text-transform: uppercase;
+        color: color("thunder");
+        font-weight: bold;
+        font-size: 1.2em;
+
+        &:hover {
+          color: color("coffee");
+        }
+      }
+    }
+  }
+}
+
+.menu_burger {
+  display: none ;
+
+  @include mobile {
+    display: block;
+  }
+}

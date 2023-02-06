@@ -1,0 +1,46 @@
+@import "../shared/index-shared";
+
+body.home {
+  height: 100vh;
+  background: url("../../img/ponton.jpg") center no-repeat;
+  background-size: cover;
+
+  h1 {
+    display: none;
+  }
+
+  .enter {
+    display: block;
+    width: 4em;
+    padding: .7em 1em .5em;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 4em;
+    color: color("white");
+    background-color: color("vanilla");
+    border: .2em solid color("thunder");
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 15px #000000;
+    text-align: center;
+    cursor: pointer;
+    margin: 40vh auto 0;
+    transform: translateY(-50%);
+
+    &:hover {
+      color: color("coffee");
+    }
+
+    @include mobile {
+      margin: 40vh 50px 0;
+      font-size: 3em;
+      width: unset;
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+

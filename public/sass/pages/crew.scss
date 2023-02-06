@@ -1,0 +1,27 @@
+@import "../components/members-list";
+@import "../components/form";
+@import "../components/field-text";
+@import "../shared/index-shared";
+
+h1 {
+  font-family:'Luckiest Guy', cursive;;
+  font-size: 7.5em;
+  line-height: 1.5;
+  background-image: url("../../img/ponton.jpg");
+  background-position-y: 45%;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  @include mobile {
+    font-size: 3.5em;
+    line-height: 1.2;
+  }
+}
+
+main {
+  @include mobile {
+    margin: 0 20px;
+  }
+}
