@@ -14,7 +14,7 @@
     "sass-loader": "^13.2.0"
   },
   "scripts": {
-    "watch": "sass --watch ./public/sass:./public/css/style.css"
+    "watch": "sass --watch ./public/sass:./public/css"
   },
   "repository": {
     "type": "git",
