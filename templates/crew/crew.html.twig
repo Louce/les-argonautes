@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block style %}{{ asset('css/pages/crew.css') }}{% endblock %}
+{% block title %}{{ parent() }} | L'équipe {% endblock %}
+
+{% block main %}
+
+    {{ form_start(argonautesForm) }}
+    {{ form_widget(argonautesForm) }}
+    <button>Embarquer</button>
+    {{ form_end(argonautesForm) }}
+
+    {% for label, messages in app.flashes %}
+        {% for message in messages %}
+            <div class="flash-{{ label }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+
+    <h2>Membres de l'équipage</h2>
+    <section class="member-list">
+
+       {% for argonaute in argonautes %}
+            <div class="member-item">{{ argonaute.name }}</div>
+        {% endfor %}
+    </section>
+{% endblock %}
