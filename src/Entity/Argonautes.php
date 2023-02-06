@@ -21,7 +21,7 @@ class Argonautes
     /**
      * @ORM\Column(type="string", length=255)
      * @Assert\NotBlank(message="Merci de renseigner un nom avant d'embarquer !")
-     * @Assert\Length(max=255, min=3, minMessage="Le nom doit faire au moins 3 lettres.")
+     * @Assert\Length(max=255, min=2, minMessage="Le nom doit faire au moins 2 lettres.")
      */
     private $name;
 

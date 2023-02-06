@@ -1,0 +1,66 @@
+@import "../shared/index-shared";
+
+form {
+  text-align: center;
+
+  #add_argonaute > div {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-size: 2em;
+      margin-bottom: .5em;
+
+      @include mobile {
+        font-size: 1.5em;
+      }
+    }
+
+    input {
+      width: 470px;
+      font-size: 1.5em;
+      border: 3px color("thunder") solid;
+      border-radius: 50px;
+      padding: 20px 40px;
+      margin: 0 auto 1em;
+
+      @include mobile {
+        width: 64%;
+        margin: 0 1em .5em;
+      }
+    }
+  }
+
+  button {
+    width: 25%;
+    padding: 15px 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 3em;
+    color: color("white");
+    background-color: color("thunder");
+    border: 2px solid color("thunder");
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px #000000;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      color: color("vanilla");
+    }
+
+    @include mobile {
+      width: 50%;
+      font-size: 1em;
+    }
+  }
+
+  .flash-success {
+    color: color("success");
+    margin-bottom: .5em;
+  }
+  ul li {
+    color: color("error");
+    padding: 0;
+  }
+}

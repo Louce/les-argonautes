@@ -1,0 +1,32 @@
+.member {
+  background-color: #80604A;
+  color: #fff;
+  padding: 15px 30px 30px;
+  border-radius: 30px;
+}
+.member h2 {
+  margin-bottom: 2.5em;
+}
+@media screen and (max-width: 768px) {
+  .member h2 {
+    margin-bottom: 1.5em;
+  }
+}
+.member-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 10px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .member-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+  }
+}
+.member-list_item {
+  padding: 0.25em 0;
+}
+
+/*# sourceMappingURL=members-list.css.map */

@@ -27,7 +27,7 @@ body.home .enter:hover {
 }
 @media screen and (max-width: 768px) {
   body.home .enter {
-    margin: 40vh 50px 0;
+    margin: 32vh 50px 0;
     font-size: 3em;
     width: unset;
   }

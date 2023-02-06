@@ -28,7 +28,7 @@ class CrewController extends AbstractController {
         if ($argonautesForm->isSubmitted() && $argonautesForm->isValid()) {
             $entityManager->persist($argonaute);
             $entityManager->flush();
-            $this->addFlash('sucess', 'Argonautes bien ajouté•e !');
+            $this->addFlash('success', 'Argonaute bien ajouté•e !');
             return $this->redirectToRoute('app_crew');
         }
 

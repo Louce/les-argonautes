@@ -8,6 +8,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  color: color("thunder");
 }
 
 main {
@@ -21,4 +22,8 @@ h1, h2 {
 
 a {
   text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
 }

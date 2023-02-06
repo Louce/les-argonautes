@@ -13,7 +13,7 @@ class AddArgonauteType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('name', TextType::class, ['label' => "Ajouter le nom d'un•e Argonautes"]);
+            ->add('name', TextType::class, ['label' => "Ajouter le nom d'un•e Argonaute"]);
         ;
     }
 

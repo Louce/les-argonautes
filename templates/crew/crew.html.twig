@@ -2,13 +2,12 @@
 
 {% block style %}{{ asset('css/pages/crew.css') }}{% endblock %}
 {% block title %}{{ parent() }} | L'équipe {% endblock %}
+{% block body_attr %}crew{% endblock %}
 
 {% block main %}
 
     {{ form_start(argonautesForm) }}
     {{ form_widget(argonautesForm) }}
-    <button>Embarquer</button>
-    {{ form_end(argonautesForm) }}
 
     {% for label, messages in app.flashes %}
         {% for message in messages %}
@@ -17,12 +16,17 @@
             </div>
         {% endfor %}
     {% endfor %}
+    <button>EMBARQUER</button>
+    {{ form_end(argonautesForm) }}
 
-    <h2>Membres de l'équipage</h2>
-    <section class="member-list">
 
-       {% for argonaute in argonautes %}
-            <div class="member-item">{{ argonaute.name }}</div>
-        {% endfor %}
+
+    <section class="member">
+        <h2>Membres de l'équipage</h2>
+        <div class="member-list">
+            {% for argonaute in argonautes %}
+                <div class="member-list_item">{{ argonaute.name }}</div>
+            {% endfor %}
+        </div>
     </section>
 {% endblock %}

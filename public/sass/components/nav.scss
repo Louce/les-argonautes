@@ -1,14 +1,12 @@
 @import "../shared/index-shared";
 
-.menu_desk {
+.menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 
   nav {
-    @include mobile {
-      display: none;
-    }
 
     ul {
       display: flex;
@@ -16,9 +14,18 @@
       justify-content: center;
       list-style-type: none;
 
+      @include mobile {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
       li {
         &:first-of-type {
           margin-right: 20px;
+
+          @include mobile {
+            margin: 0 0 10px;
+          }
         }
       }
 
@@ -33,13 +40,5 @@
         }
       }
     }
-  }
-}
-
-.menu_burger {
-  display: none ;
-
-  @include mobile {
-    display: block;
   }
 }
