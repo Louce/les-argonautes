@@ -2,7 +2,12 @@
 
 namespace App\Controller;
 
+use App\Entity\Argonautes;
+use App\Form\AddArgonauteType;
+use App\Repository\ArgonautesRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
 class MainController extends AbstractController {
@@ -11,12 +16,5 @@ class MainController extends AbstractController {
      */
     public function home() {
         return $this->render('main/home.html.twig');
-    }
-
-    /**
-     * @Route("/equipe", name="main_crew")
-     */
-    public function crew() {
-        return $this->render('main/crew.html.twig');
     }
 }

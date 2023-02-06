@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\ArgonautesRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=ArgonautesRepository::class)
@@ -19,6 +20,8 @@ class Argonautes
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank(message="Merci de renseigner un nom avant d'embarquer !")
+     * @Assert\Length(max=255, min=3, minMessage="Le nom doit faire au moins 3 lettres.")
      */
     private $name;
 
